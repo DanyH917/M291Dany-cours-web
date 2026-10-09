@@ -57,10 +57,15 @@ Puis ouvrir `index.html` dans un navigateur (ou utiliser l'extension *Live Serve
 
 ## 📅 Planning
 
-- [x] Pitch du projet
+- [x] Pitch du projet → [`design/pitch.md`](./design/pitch.md)
 - [x] Création du repository et du `kit.ia.md`
 - [x] Clonage dans VS Code et mise en forme du README
-- [ ] Maquette de la page d'accueil
+- [x] Persona et user flow → [`design/persona.md`](./design/persona.md) · [`design/user-flow.md`](./design/user-flow.md)
+- [x] Brief de conception → [`brief.md`](./brief.md)
+- [x] Wireframes mobiles → [`design/wireframes/`](./design/wireframes/)
+- [x] 3 propositions de design IA et choix final → [`design/propositions/`](./design/propositions/) · [`design/critique.md`](./design/critique.md)
+- [x] Maquette cliquable du design final → [`design/maquette/`](./design/maquette/)
+- [ ] Audit d'accessibilité et test utilisateur → [`design/tests-utilisateurs.md`](./design/tests-utilisateurs.md)
 - [ ] Développement de la vitrine
 - [ ] Mise en ligne
 
