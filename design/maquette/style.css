@@ -6,7 +6,9 @@
   --texte-2: #5A5A5A;
   --accent: #C2410C;
   --sur-accent: #FFFFFF;
-  --bordure: #E4DED4;
+  --bordure: #E4DED4;        /* séparateurs décoratifs uniquement */
+  --bordure-champ: #857D73;  /* champs et puces : 3,79:1 sur le fond (WCAG 1.4.11) */
+  --focus: #1F1F1F;
   --erreur: #B42318;
   --rayon: 10px;
   --titre: Georgia, "Times New Roman", serif;
@@ -16,6 +18,11 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--fond); color: var(--texte); font: 16px/1.5 var(--corps); max-width: 480px; margin: 0 auto; }
 a { color: inherit; }
+[hidden] { display: none !important; }
+
+/* Focus clavier bien visible (WCAG 2.4.7) */
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.btn:focus-visible, .chip:focus-visible { box-shadow: 0 0 0 3px var(--fond); }
 
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .skip { position: absolute; left: -999px; top: 8px; background: var(--texte); color: var(--fond); padding: 12px 16px; border-radius: var(--rayon); z-index: 10; }
@@ -30,11 +37,11 @@ main { padding: 0 16px 120px; }
 .hero h1 { font: 700 26px/1.15 var(--titre); margin: 8px 0; }
 .hero p { color: var(--texte-2); margin-bottom: 16px; }
 
-.search { width: 100%; min-height: 48px; padding: 0 14px; border: 2px solid var(--bordure); border-radius: var(--rayon); background: var(--surface); font: inherit; color: var(--texte); margin-bottom: 12px; }
+.search { width: 100%; min-height: 48px; padding: 0 14px; border: 2px solid var(--bordure-champ); border-radius: var(--rayon); background: var(--surface); font: inherit; color: var(--texte); margin-bottom: 12px; }
 .search::placeholder { color: var(--texte-2); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-.chip { min-height: 44px; padding: 0 16px; border: 2px solid var(--bordure); border-radius: 999px; background: var(--surface); color: var(--texte); font: inherit; font-size: 15px; cursor: pointer; }
+.chip { min-height: 48px; padding: 0 16px; border: 2px solid var(--bordure-champ); border-radius: 999px; background: var(--surface); color: var(--texte); font: inherit; font-size: 15px; cursor: pointer; }
 .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--sur-accent); font-weight: 700; }
 
 .compteur { font-weight: 700; margin-bottom: 12px; }
@@ -60,7 +67,7 @@ main { padding: 0 16px 120px; }
 
 form { display: grid; gap: 6px; }
 label { font-weight: 700; margin-top: 8px; }
-input, textarea { width: 100%; min-height: 48px; padding: 10px 14px; border: 2px solid var(--bordure); border-radius: var(--rayon); font: inherit; background: var(--surface); }
+input, textarea { width: 100%; min-height: 48px; padding: 10px 14px; border: 2px solid var(--bordure-champ); border-radius: var(--rayon); font: inherit; background: var(--surface); }
 form .btn { margin-top: 16px; }
 .erreur { color: var(--erreur); font-size: 15px; }
 [aria-invalid="true"] { border-color: var(--erreur); }
