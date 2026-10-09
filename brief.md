@@ -9,7 +9,7 @@ En Suisse romande, de nombreuses personnes lancent une petite entreprise (food t
 - **Prénom & Âge :** Enzo Rochat, 26 ans — lance son food truck « Le Bivouac » à Yverdon-les-Bains.
 - **Contexte d'utilisation :** Le soir sur son canapé ou entre deux marchés, smartphone Android 390 px tenu à une main.
 - **Besoins clés :** Voir des exemples concrets proches de son activité, comprendre le prix, contacter rapidement, lire sans effort.
-- Fiche complète : [`design/persona.md`](./application%20ict%20291/design/persona.md) · Parcours : [`design/user-flow.md`](./application%20ict%20291/design/user-flow.md)
+- Fiche complète : [`design/persona.md`](./design/persona.md) · Parcours : [`design/user-flow.md`](./design/user-flow.md)
 
 ## 3. Fonctionnalités Essentielles (Périmètre MVP)
 

@@ -1,7 +1,7 @@
 # Critique comparative — propositions de design IA
 
 **Projet :** DHgraphics · **Écran comparé :** Accueil & Exploration (mobile 390 px)
-**Outil IA utilisé :** Claude (Anthropic) — 3 directions artistiques générées à partir du [brief](../../brief.md) et des [wireframes](./wireframes/).
+**Outil IA utilisé :** Claude (Anthropic) — 3 directions artistiques générées à partir du [brief](../brief.md) et des [wireframes](./wireframes/).
 **Images archivées :** [`propositions/`](./propositions/)
 
 | A · Atelier papier | B · Néon nuit | C · Studio bleu |
