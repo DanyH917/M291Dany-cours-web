@@ -1,0 +1,70 @@
+/* DHgraphics — design final « Atelier papier » (Mobile First, 390 px) */
+:root {
+  --fond: #FAF7F2;
+  --surface: #FFFFFF;
+  --texte: #1F1F1F;
+  --texte-2: #5A5A5A;
+  --accent: #C2410C;
+  --sur-accent: #FFFFFF;
+  --bordure: #E4DED4;
+  --erreur: #B42318;
+  --rayon: 10px;
+  --titre: Georgia, "Times New Roman", serif;
+  --corps: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--fond); color: var(--texte); font: 16px/1.5 var(--corps); max-width: 480px; margin: 0 auto; }
+a { color: inherit; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--texte); color: var(--fond); padding: 12px 16px; border-radius: var(--rayon); z-index: 10; }
+.skip:focus { left: 8px; }
+
+.top { display: flex; justify-content: space-between; align-items: center; padding: 16px; }
+.logo { font: 800 22px var(--titre); text-decoration: none; min-height: 48px; display: flex; align-items: center; }
+.logo span { color: var(--accent); }
+.btn-outline { min-height: 48px; padding: 0 16px; border: 2px solid var(--accent); border-radius: var(--rayon); display: flex; align-items: center; font-weight: 700; font-size: 15px; text-decoration: none; }
+
+main { padding: 0 16px 120px; }
+.hero h1 { font: 700 26px/1.15 var(--titre); margin: 8px 0; }
+.hero p { color: var(--texte-2); margin-bottom: 16px; }
+
+.search { width: 100%; min-height: 48px; padding: 0 14px; border: 2px solid var(--bordure); border-radius: var(--rayon); background: var(--surface); font: inherit; color: var(--texte); margin-bottom: 12px; }
+.search::placeholder { color: var(--texte-2); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.chip { min-height: 44px; padding: 0 16px; border: 2px solid var(--bordure); border-radius: 999px; background: var(--surface); color: var(--texte); font: inherit; font-size: 15px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--sur-accent); font-weight: 700; }
+
+.compteur { font-weight: 700; margin-bottom: 12px; }
+.cartes { list-style: none; display: grid; gap: 14px; }
+.carte a { display: block; background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); overflow: hidden; text-decoration: none; box-shadow: 0 1px 3px rgb(0 0 0 / .06); }
+.visuel { display: block; height: 120px; }
+.visuel.grand { height: 200px; border-radius: var(--rayon); margin: 12px 0; }
+.carte-texte { display: block; padding: 12px 14px; }
+.tag { display: block; font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .5px; }
+.carte-titre { display: block; font: 700 19px var(--titre); }
+.meta { color: var(--texte-2); font-size: 15px; }
+
+.retour { display: inline-flex; align-items: center; min-height: 48px; font-weight: 700; }
+#ecran-fiche h1, #ecran-devis h1, #ecran-qui h1 { font: 700 24px/1.2 var(--titre); margin-bottom: 12px; }
+.infos div { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--bordure); }
+.infos dt { color: var(--texte-2); }
+.infos dd { font-weight: 700; }
+.encadre { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 14px; margin: 16px 0; display: grid; gap: 8px; }
+.texte { color: var(--texte); }
+
+.btn { display: flex; justify-content: center; align-items: center; width: 100%; min-height: 52px; border: 0; border-radius: var(--rayon); background: var(--accent); color: var(--sur-accent); font: 700 17px var(--corps); text-decoration: none; cursor: pointer; }
+.barre-action { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px; background: var(--fond); border-top: 1px solid var(--bordure); max-width: 480px; margin: 0 auto; }
+
+form { display: grid; gap: 6px; }
+label { font-weight: 700; margin-top: 8px; }
+input, textarea { width: 100%; min-height: 48px; padding: 10px 14px; border: 2px solid var(--bordure); border-radius: var(--rayon); font: inherit; background: var(--surface); }
+form .btn { margin-top: 16px; }
+.erreur { color: var(--erreur); font-size: 15px; }
+[aria-invalid="true"] { border-color: var(--erreur); }
+
+.succes { text-align: center; padding: 24px 0; display: grid; gap: 12px; }
+.coche { width: 72px; height: 72px; margin: 0 auto; border-radius: 50%; background: #15803D; color: #fff; font-size: 40px; display: flex; align-items: center; justify-content: center; }
+.vide { display: grid; gap: 12px; padding: 16px 0; }

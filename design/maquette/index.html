@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DHgraphics — Maquette cliquable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="top">
+    <a class="logo" href="#accueil" aria-label="DHgraphics, retour à l'accueil">DH<span>graphics</span></a>
+    <a class="btn-outline" href="#qui">Qui suis-je ?</a>
+  </header>
+
+  <main id="contenu">
+    <!-- Écran 1 + 2 : Accueil, recherche et filtres -->
+    <section id="ecran-accueil" class="ecran" aria-labelledby="titre-accueil">
+      <div class="hero">
+        <h1 id="titre-accueil">Votre image, dessinée pour votre entreprise.</h1>
+        <p>Logos, identités visuelles et kits déco pour les petites entreprises romandes.</p>
+      </div>
+
+      <label class="sr-only" for="recherche">Rechercher un projet</label>
+      <input id="recherche" class="search" type="search" placeholder="Rechercher un projet…" autocomplete="off">
+
+      <div class="chips" role="group" aria-label="Filtrer par catégorie">
+        <button class="chip" type="button" data-filtre="tous" aria-pressed="true">Tous</button>
+        <button class="chip" type="button" data-filtre="Identité visuelle" aria-pressed="false">Identité visuelle</button>
+        <button class="chip" type="button" data-filtre="Logo" aria-pressed="false">Logos</button>
+        <button class="chip" type="button" data-filtre="Kit déco moto" aria-pressed="false">Kits déco moto</button>
+      </div>
+
+      <p class="compteur" id="compteur" aria-live="polite"></p>
+      <ul class="cartes" id="cartes"></ul>
+      <div class="vide" id="vide" hidden>
+        <p>Aucun projet pour ce filtre.</p>
+        <button class="btn" type="button" id="reset">Voir tous les projets</button>
+      </div>
+    </section>
+
+    <!-- Écran 3 : Fiche détaillée -->
+    <section id="ecran-fiche" class="ecran" hidden aria-labelledby="titre-fiche">
+      <a class="retour" href="#accueil">← Retour aux projets</a>
+      <div class="visuel grand" id="fiche-visuel" role="img"></div>
+      <h1 id="titre-fiche"></h1>
+      <dl class="infos" id="fiche-infos"></dl>
+      <div class="encadre" id="fiche-texte"></div>
+      <div class="barre-action">
+        <a class="btn" id="btn-devis" href="#devis">Demander un devis</a>
+      </div>
+    </section>
+
+    <!-- Écran 4 : Devis et confirmation -->
+    <section id="ecran-devis" class="ecran" hidden aria-labelledby="titre-devis">
+      <a class="retour" href="#accueil">← Retour aux projets</a>
+      <h1 id="titre-devis">Demander un devis</h1>
+      <form id="form-devis" novalidate>
+        <label for="prenom">Prénom</label>
+        <input id="prenom" name="prenom" autocomplete="given-name" required>
+        <p class="erreur" id="err-prenom" hidden>Indiquez votre prénom.</p>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <p class="erreur" id="err-email" hidden>Il manque le @ dans l'e-mail (ex. : enzo@exemple.ch).</p>
+
+        <label for="projet">Votre projet</label>
+        <textarea id="projet" name="projet" rows="4" required></textarea>
+        <p class="erreur" id="err-projet" hidden>Décrivez votre projet en une ou deux phrases.</p>
+
+        <button class="btn" type="submit">Envoyer</button>
+      </form>
+      <div class="succes" id="succes" hidden tabindex="-1">
+        <p class="coche" aria-hidden="true">✓</p>
+        <h2 id="succes-titre">Demande envoyée</h2>
+        <p>Réponse sous 48 h.</p>
+        <a class="btn" href="#accueil">Voir d'autres projets</a>
+      </div>
+    </section>
+
+    <!-- Page Qui suis-je -->
+    <section id="ecran-qui" class="ecran" hidden aria-labelledby="titre-qui">
+      <a class="retour" href="#accueil">← Retour aux projets</a>
+      <h1 id="titre-qui">Qui suis-je ?</h1>
+      <p class="texte">Je m'appelle Dany, graphiste en formation. Je crée des logos, des identités visuelles et des kits déco de motocross pour des petites entreprises et des clubs de Suisse romande.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
