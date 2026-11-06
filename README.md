@@ -66,6 +66,7 @@ Puis ouvrir `index.html` dans un navigateur (ou utiliser l'extension *Live Serve
 - [x] 3 propositions de design IA et choix final → [`design/propositions/`](./design/propositions/) · [`design/critique.md`](./design/critique.md)
 - [x] Maquette cliquable du design final → [`design/maquette/`](./design/maquette/)
 - [ ] Audit d'accessibilité et test utilisateur → [`design/tests-utilisateurs.md`](./design/tests-utilisateurs.md)
+- [x] Base de données des réalisations → [`data.json`](./data.json) (32 fiches) · documentation et schéma → [`data/`](./data/)
 - [ ] Développement de la vitrine
 - [ ] Mise en ligne
 

@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "titre": "Identité complète du Café du Port",
+    "client": "Café du Port",
+    "commune": "Nyon",
+    "categorie": "Identité visuelle",
+    "prixMoyen": 900.00,
+    "adresse": "Quai des Alpes, Nyon",
+    "coordonnees": { "lat": 46.3829, "lng": 6.2418 },
+    "horaires": {
+      "lundi": [
+        { "ouverture": "07:30", "fermeture": "23:00" }
+      ],
+      "mardi": [
+        { "ouverture": "07:30", "fermeture": "23:00" }
+      ],
+      "mercredi": [
+        { "ouverture": "07:30", "fermeture": "23:00" }
+      ],
+      "jeudi": [
+        { "ouverture": "07:30", "fermeture": "23:00" }
+      ],
+      "vendredi": [
+        { "ouverture": "07:30", "fermeture": "00:00" }
+      ],
+      "samedi": [
+        { "ouverture": "08:00", "fermeture": "00:00" }
+      ],
+      "dimanche": [
+        { "ouverture": "08:00", "fermeture": "22:00" }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "titre": "Logo de l'Atelier Vélo Libre",
+    "client": "Atelier Vélo Libre",
+    "commune": "Lausanne",
+    "categorie": "Logo",
+    "prixMoyen": 350.00,
+    "adresse": "Rue de la Borde, Lausanne",
+    "coordonnees": { "lat": 46.5226, "lng": 6.6335 },
+    "horaires": {
+      "lundi": [],
+      "mardi": [
+        { "ouverture": "09:00", "fermeture": "12:00" },
+        { "ouverture": "13:30", "fermeture": "18:30" }
+      ],
+      "mercredi": [
+        { "ouverture": "09:00", "fermeture": "12:00" },
+        { "ouverture": "13:30", "fermeture": "18:30" }
+      ],
+      "jeudi": [
+        { "ouverture": "09:00", "fermeture": "12:00" },
+        { "ouverture": "13:30", "fermeture": "18:30" }
+      ],
+      "vendredi": [
+        { "ouverture": "09:00", "fermeture": "12:00" },
+        { "ouverture": "13:30", "fermeture": "18:30" }
+      ],
+      "samedi": [
+        { "ouverture": "09:00", "fermeture": "16:00" }
+      ],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 3,
+    "titre": "Kit déco du MX Team Broye",
+    "client": "MX Team Broye",
+    "commune": "Payerne",
+    "categorie": "Kit déco moto",
+    "prixMoyen": 450.00,
+    "adresse": "Circuit de motocross, Payerne",
+    "coordonnees": { "lat": 46.8202, "lng": 6.9389 },
+    "horaires": {
+      "lundi": [],
+      "mardi": [],
+      "mercredi": [
+        { "ouverture": "18:00", "fermeture": "21:00" }
+      ],
+      "jeudi": [],
+      "vendredi": [
+        { "ouverture": "18:00", "fermeture": "21:00" }
+      ],
+      "samedi": [
+        { "ouverture": "09:00", "fermeture": "17:00" }
+      ],
+      "dimanche": [
+        { "ouverture": "09:00", "fermeture": "17:00" }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "titre": "Identité du Smash Burger Bar",
+    "client": "Smash Burger Bar",
+    "commune": "Vevey",
+    "categorie": "Identité visuelle",
+    "prixMoyen": 1100.00,
+    "adresse": "Place du Marché, Vevey",
+    "coordonnees": { "lat": 46.46, "lng": 6.843 },
+    "horaires": {
+      "lundi": [],
+      "mardi": [
+        { "ouverture": "11:30", "fermeture": "14:00" }
+      ],
+      "mercredi": [
+        { "ouverture": "11:30", "fermeture": "14:00" }
+      ],
+      "jeudi": [
+        { "ouverture": "11:30", "fermeture": "14:00" },
+        { "ouverture": "18:00", "fermeture": "22:00" }
+      ],
+      "vendredi": [
+        { "ouverture": "11:30", "fermeture": "14:00" },
+        { "ouverture": "18:00", "fermeture": "23:00" }
+      ],
+      "samedi": [
+        { "ouverture": "12:00", "fermeture": "23:00" }
+      ],
+      "dimanche": []
+    }
+  },
+  {
+    "id": 5,
+    "titre": "Nouvelle image de la Boulangerie Chappuis",
+    "client": "Boulangerie Chappuis",
+    "commune": "Yverdon-les-Bains",
+    "categorie": "Identité visuelle",
+    "prixMoyen": 850.00,
+    "adresse": "Rue du Lac, Yverdon-les-Bains",
+    "coordonnees": { "lat": 46.7785, "lng": 6.6413 },
+    "horaires": {
+      "lundi": [
+        { "ouverture": "06:30", "fermeture": "18:30" }
+      ],
+      "mardi": [
+        { "ouverture": "06:30", "fermeture": "18:30" }
+      ],
+      "mercredi": [
+        { "ouverture": "06:30", "fermeture": "18:30" }
+      ],
+      "jeudi": [
+        { "ouverture": "06:30", "fermeture": "18:30" }
+      ],
+      "vendredi": [
+        { "ouverture": "06:30", "fermeture": "18:30" }
+      ],
+      "samedi": [
+        { "ouverture": "07:00", "fermeture": "16:00" }
+      ],
+      "dimanche": [
+        { "ouverture": "07:00", "fermeture": "12:00" }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "titre": "Identité du Food Truck Le Bivouac",
+    "client": "Le Bivouac",
+    "commune": "Yverdon-les-Bains",
+    "categorie": "Identité visuelle",
+    "prixMoyen": 1050.00,
+    "adresse": "Place Pestalozzi, Yverdon-les-Bains",
+    "coordonnees": { "lat": 46.7809, "lng": 6.6355 },
+    "horaires": {
+      "lundi": [],
+      "mardi": [],
+      "mercredi": [
+        { "ouverture": "11:30", "fermeture": "14:00" }
+      ],
+      "jeudi": [
+        { "ouverture": "11:30", "fermeture": "14:00" }
+      ],
+      "vendredi": [
+        { "ouverture": "11:30", "fermeture": "14:00" },
+        { "ouverture": "18:00", "fermeture": "22:00" }
+      ],
+      "samedi": [
+        { "ouverture": "18:00", "fermeture": "23:00" }
+      ],
+      "dimanche": []
+    }
+  }
+]
