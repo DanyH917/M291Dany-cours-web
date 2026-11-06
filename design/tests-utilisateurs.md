@@ -28,7 +28,7 @@ Mesures faites sur la palette de mon **brandboard** (rouge `#e30b17`, noir `#1c1
 
 > ⚠️ Le rouge du brandboard sur fond noir (**3,51:1**) échoue pour du petit texte. Règle appliquée : rouge sur noir **uniquement pour les titres ≥ 24 px** ; les petits textes sur noir sont en blanc ou en gris `#c4c4c4`.
 >
-> Les initiales « DH » du logo (noir avec double contour blanc et rouge) ne sont pas soumises au critère : WCAG exempte les logotypes. Le lien du logo a quand même un nom accessible (`aria-label="DHgraphics, accueil"`).
+> Le logo est le fichier SVG officiel du brandboard (`images/logo-dhgraphics-blanc.svg`). Les logotypes ne sont pas soumis au critère de contraste WCAG ; l'image a quand même un texte alternatif (`alt="DHgraphics, accueil"`).
 
 ### A2. Contrastes des contours de champs et de boutons (WCAG 1.4.11 : ≥ 3:1)
 

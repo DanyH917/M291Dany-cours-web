@@ -49,6 +49,7 @@ Ma charte graphique est définie dans mon brandboard → [`design/brandboard/bra
 |---|---|
 | **Couleurs** | Rouge `#e30b17` · Noir `#1c1c1c` · Blanc `#ffffff` |
 | **Typographies** | Teko Bold (titres) · Oswald Regular (textes) |
+| **Logo** | fichiers SVG dans [`images/`](./images/) : version blanche pour fond noir, version noire pour fond clair, favicon « DH » |
 | **Univers** | Sport design : course, détermination, logo typographique à double contour |
 
 ## 🛠️ Technologies

@@ -112,31 +112,13 @@ h1, h2, h3 {
 }
 .lien-evitement:focus { left: var(--space-2); }
 
-/* ---------- 3. Logo (typographique, inspiré du brandboard) ---------- */
+/* ---------- 3. Logo (fichier SVG officiel du brandboard) ---------- */
 .logo {
   display: inline-flex;
   align-items: center;
   min-height: var(--cible-min);
-  font-family: var(--font-titre);
-  font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 1;
-  font-style: italic;
-  text-transform: uppercase;
-  text-decoration: none;
-  transform: skewX(var(--skew));
 }
-.logo-dh {
-  color: var(--brand-noir);
-  /* double contour : blanc à l'intérieur, rouge à l'extérieur */
-  -webkit-text-stroke: 1px var(--brand-blanc);
-  text-shadow:
-    2px 0 0 var(--brand-blanc), -2px 0 0 var(--brand-blanc), 0 2px 0 var(--brand-blanc), 0 -2px 0 var(--brand-blanc),
-    4px 0 0 var(--brand-rouge), -4px 0 0 var(--brand-rouge), 0 4px 0 var(--brand-rouge), 0 -4px 0 var(--brand-rouge),
-    3px 3px 0 var(--brand-rouge), -3px -3px 0 var(--brand-rouge), 3px -3px 0 var(--brand-rouge), -3px 3px 0 var(--brand-rouge);
-  padding: 0 6px;
-}
-.logo-graphics { color: var(--brand-blanc); margin-left: 2px; }
+.logo img { height: 34px; width: auto; }
 
 /* ---------- 4. En-tête (bandeau noir) ---------- */
 .header-site {
@@ -393,7 +375,7 @@ h1, h2, h3 {
    ========================================================= */
 @media (min-width: 768px) {
   .header-site { padding: var(--space-3) var(--space-5); }
-  .logo { font-size: 2.75rem; }
+  .logo img { height: 46px; }
   .lien-nav {
     display: inline-flex;
     align-items: center;
