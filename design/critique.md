@@ -63,3 +63,22 @@ C'est la seule proposition qui respecte la direction artistique du brief et qui 
 | Texte secondaire | Gris foncé | `#5A5A5A` |
 | Accent | Orange brûlé DH | `#C2410C` |
 | Erreur | Rouge brique | `#B42318` |
+
+## Mise à jour : application de mon brandboard
+
+Après le choix de la proposition A, j'ai réalisé mon propre **brandboard DHgraphics** ([`brandboard/brandboard-dhgraphics.pdf`](./brandboard/brandboard-dhgraphics.pdf)). C'est lui qui fixe maintenant la direction artistique du site, car il correspond à mon positionnement de graphiste **sport design**.
+
+| Élément | Proposition A (IA) | Version finale (mon brandboard) |
+|---------|--------------------|---------------------------------|
+| Ambiance | atelier, papier, artisanal | course, sport, détermination |
+| Fond / surfaces | papier `#FAF7F2` | blanc `#ffffff`, gris clair `#f2f2f2` |
+| Texte et bandeaux | anthracite `#1F1F1F` | noir `#1c1c1c` |
+| Accent | orange `#C2410C` | rouge `#e30b17` |
+| Titres | Georgia (serif) | **Teko Bold**, majuscules |
+| Textes | police système | **Oswald Regular** |
+| Formes | arrondies | angles vifs, inclinaison -10°, étoiles, bandes de course |
+
+**Ce que je garde de la proposition A :** la structure de l'écran (logo à gauche, « Qui suis-je ? » à droite, accroche, recherche, puces, cartes), les cartes avec étiquette de catégorie, et toutes les corrections d'accessibilité.
+
+**Contrastes de la nouvelle palette :** texte blanc sur rouge **4,85:1** ✅ · noir sur blanc **17,04:1** ✅ · rouge sur blanc **4,85:1** ✅. Le rouge sur fond noir ne donne que **3,51:1** : je l'utilise donc **uniquement pour les grands titres** (≥ 24 px, seuil 3:1), jamais pour du petit texte.
+

@@ -30,13 +30,15 @@ En Suisse romande, de nombreuses personnes lancent une petite entreprise (food t
 ## 5. Charte éditoriale & Tonalité
 
 - **Ton :** direct et chaleureux, vouvoiement, zéro jargon de graphiste.
-- **Ambiance visuelle :** professionnelle, créative, accessible — *comme un carnet de croquis bien rangé posé sur une table d'atelier*.
-- **Palette (en mots) :**
-  - Fond : blanc cassé / papier
-  - Texte : noir anthracite
-  - Accent : orange vif (couleur de la marque DH)
-  - Attention / erreur : rouge brique
-- **Typographie :** une police sans empattement très lisible pour le texte, une police plus affirmée pour les titres.
+- **Ambiance visuelle :** sportive, déterminée, percutante — *comme une affiche de course de motocross*. Direction artistique définie dans mon brandboard : [`design/brandboard/brandboard-dhgraphics.pdf`](./design/brandboard/brandboard-dhgraphics.pdf).
+- **Logo :** typographique, inspiré de l'univers de la course, avec un double contour sur les initiales « DH ».
+- **Palette (brandboard) :**
+  - Blanc `#ffffff` : fonds et cartes (60 %)
+  - Noir `#1c1c1c` : en-tête, textes, pied de page (30 %)
+  - Rouge `#e30b17` : boutons, accents, filtres actifs (10 %) — la couleur de la détermination de gagner
+  - Erreur : rouge foncé `#b5000f`
+- **Typographie (brandboard) :** **Teko Bold** pour les titres, boutons et étiquettes (en majuscules) · **Oswald Regular** pour les textes.
+- **Motifs :** étoile, bandes de course en diagonale, éléments inclinés (-10°).
 
 ## 6. Contraintes Techniques & Ergonomiques
 

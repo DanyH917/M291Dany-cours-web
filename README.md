@@ -1,8 +1,8 @@
 # 🎨 DHgraphics
 
-![Statut](https://img.shields.io/badge/statut-en%20cours-orange)
-![Module](https://img.shields.io/badge/module-ICT%20291-blue)
-![HTML](https://img.shields.io/badge/HTML-CSS-red)
+![Statut](https://img.shields.io/badge/statut-en%20cours-e30b17)
+![Module](https://img.shields.io/badge/module-ICT%20291-1c1c1c)
+![HTML](https://img.shields.io/badge/HTML-CSS-e30b17)
 
 > Site vitrine qui présente mes réalisations graphiques à mes futurs clients.
 
@@ -13,6 +13,7 @@
 - [À propos](#-à-propos)
 - [Public cible](#-public-cible)
 - [Fonctionnalité principale](#-fonctionnalité-principale)
+- [Direction artistique](#-direction-artistique)
 - [Technologies](#-technologies)
 - [Installation](#-installation)
 - [Planning](#-planning)
@@ -39,6 +40,16 @@ C'est une **vitrine** : pas de compte client, pas de paiement — juste mes proj
    - présentation du projet
    - points forts et points faibles
    - type d'entreprise visé
+
+## 🎨 Direction artistique
+
+Ma charte graphique est définie dans mon brandboard → [`design/brandboard/brandboard-dhgraphics.pdf`](./design/brandboard/brandboard-dhgraphics.pdf)
+
+| | |
+|---|---|
+| **Couleurs** | Rouge `#e30b17` · Noir `#1c1c1c` · Blanc `#ffffff` |
+| **Typographies** | Teko Bold (titres) · Oswald Regular (textes) |
+| **Univers** | Sport design : course, détermination, logo typographique à double contour |
 
 ## 🛠️ Technologies
 
