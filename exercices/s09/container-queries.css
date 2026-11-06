@@ -1,0 +1,101 @@
+/* =========================================================
+   S09-AV1 — Carte projet autonome avec Container Queries
+   La carte s'adapte à la largeur de SON conteneur, pas à celle de l'écran.
+   Démo : exercices/s09/index.html
+   ========================================================= */
+
+/* Reprend les design tokens de style.css (palette « Atelier papier ») */
+@import url("../../style.css");
+
+/* 1. Le parent devient un contexte de conteneur */
+.zone-cartes {
+  container-type: inline-size;
+  container-name: zone-cartes;
+}
+
+/* 2. Disposition par défaut : carte verticale (image au-dessus du texte) */
+.carte-cq {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.carte-cq .carte-visuel {
+  aspect-ratio: 16 / 9;
+}
+
+.carte-cq .carte-corps {
+  padding: var(--space-3);
+  display: grid;
+  gap: var(--space-1);
+  align-content: center;
+}
+
+/* 3. Dès que le CONTENEUR fait au moins 400 px : carte horizontale */
+@container zone-cartes (min-width: 400px) {
+  .carte-cq {
+    grid-template-columns: 160px 1fr;
+  }
+
+  .carte-cq .carte-visuel {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 140px;
+  }
+
+  .carte-cq .carte-titre {
+    font-size: var(--text-xl);
+  }
+}
+
+/* 4. Conteneur très large (≥ 640 px) : plus d'air et image plus grande */
+@container zone-cartes (min-width: 640px) {
+  .carte-cq {
+    grid-template-columns: 260px 1fr;
+  }
+
+  .carte-cq .carte-corps {
+    padding: var(--space-4);
+  }
+}
+
+/* 5. Navigateurs sans container queries : on garde la carte verticale,
+      qui reste lisible partout (rétro-compatibilité) */
+@supports not (container-type: inline-size) {
+  .carte-cq { grid-template-columns: 1fr; }
+}
+
+/* --- Mise en page de la page de démonstration --- */
+.demo {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-3);
+  display: grid;
+  gap: var(--space-5);
+}
+
+.demo h1 { font: 700 var(--text-2xl) var(--font-titre); }
+.demo h2 { font: 700 var(--text-lg) var(--font-titre); margin-bottom: var(--space-2); }
+.demo .note { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+.demo-colonnes {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 900px) {
+  .demo-colonnes {
+    grid-template-columns: 280px 1fr;
+    align-items: start;
+  }
+}
+
+.cadre {
+  border: 2px dashed var(--color-border-strong);
+  border-radius: var(--radius-card);
+  padding: var(--space-3);
+}

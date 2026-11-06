@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S09-AV1 — Container Queries · DHgraphics</title>
+  <link rel="stylesheet" href="container-queries.css">
+</head>
+<body>
+  <main class="demo">
+    <header>
+      <h1>Container Queries : la même carte, deux conteneurs</h1>
+      <p class="note">Les deux cartes ont exactement le même HTML et le même CSS. Seule la largeur de leur conteneur change (cadre pointillé). Sur un écran d'au moins 900 px, la colonne de gauche reste étroite (280 px) : la carte y reste verticale, alors que celle de droite passe à l'horizontale.</p>
+    </header>
+
+    <div class="demo-colonnes">
+      <section class="cadre" aria-labelledby="titre-etroit">
+        <h2 id="titre-etroit">Colonne étroite (280 px)</h2>
+        <div class="zone-cartes">
+          <article class="carte-cq">
+            <div class="carte-visuel visuel-1" role="img" aria-label="Aperçu : identité du Café du Port"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Identité visuelle</p>
+              <h3 class="carte-titre">Identité complète du Café du Port</h3>
+              <p class="commune">Restauration · Nyon</p>
+              <p class="carte-prix">dès 900 CHF</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cadre" aria-labelledby="titre-large">
+        <h2 id="titre-large">Zone large</h2>
+        <div class="zone-cartes">
+          <article class="carte-cq">
+            <div class="carte-visuel visuel-1" role="img" aria-label="Aperçu : identité du Café du Port"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Identité visuelle</p>
+              <h3 class="carte-titre">Identité complète du Café du Port</h3>
+              <p class="commune">Restauration · Nyon</p>
+              <p class="carte-prix">dès 900 CHF</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <p class="note">Test : ouvrez les DevTools (F12) et réduisez la fenêtre. Avec <code>@media</code>, les deux cartes changeraient en même temps ; avec <code>@container</code>, chaque carte réagit seule à la place dont elle dispose.</p>
+  </main>
+</body>
+</html>
