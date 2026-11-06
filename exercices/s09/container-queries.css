@@ -4,7 +4,7 @@
    Démo : exercices/s09/index.html
    ========================================================= */
 
-/* Reprend les design tokens de style.css (palette « Atelier papier ») */
+/* Reprend les design tokens de style.css (brandboard DHgraphics : rouge, noir, blanc, Teko et Oswald) */
 @import url("../../style.css");
 
 /* 1. Le parent devient un contexte de conteneur */

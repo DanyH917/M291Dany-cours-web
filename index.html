@@ -4,25 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DHgraphics — Identités visuelles pour petites entreprises romandes</title>
-  <meta name="description" content="Logos, identités visuelles et kits déco moto pour les petites entreprises et les clubs de Suisse romande.">
+  <meta name="description" content="DHgraphics, sport design : logos, identités visuelles et kits déco moto pour les clubs, les pilotes et les petites entreprises de Suisse romande.">
+  <!-- Polices du brandboard : Teko Bold (titres) et Oswald Regular (textes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Teko:wght@700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="lien-evitement" href="#contenu">Aller au contenu</a>
 
   <header class="header-site">
-    <a class="logo" href="index.html" aria-label="DHgraphics, accueil">DH<span>graphics</span></a>
+    <a class="logo" href="index.html" aria-label="DHgraphics, accueil"><span class="logo-dh" aria-hidden="true">DH</span><span class="logo-graphics" aria-hidden="true">Graphics</span></a>
     <nav class="nav-site" aria-label="Navigation principale">
       <a class="lien-nav actif" href="#realisations" aria-current="page">Réalisations</a>
       <a class="btn-contour" href="#qui-suis-je">Qui suis-je ?</a>
     </nav>
   </header>
 
-  <main id="contenu" class="contenu-principal">
+  <main id="contenu">
     <section class="hero" aria-labelledby="titre-hero">
-      <h1 id="titre-hero">Votre image, dessinée pour votre entreprise.</h1>
-      <p class="hero-intro">Logos, identités visuelles et kits déco moto pour les petites entreprises et les clubs de Suisse romande.</p>
+      <div class="hero-contenu">
+        <p class="hero-sur-titre">Sport Design</p>
+        <h1 id="titre-hero">Votre image, <em>dessinée pour gagner.</em></h1>
+        <p class="hero-intro">Logos, identités visuelles et kits déco moto pour les clubs, les pilotes et les petites entreprises de Suisse romande.</p>
+      </div>
     </section>
+
+    <div class="contenu-principal">
 
     <!-- Recherche et filtres : affichés dès maintenant (wireframe), rendus actifs en semaine 12 -->
     <div class="outils" role="search">
@@ -38,7 +47,7 @@
 
     <div class="mise-en-page">
       <section id="realisations" class="realisations" aria-labelledby="titre-realisations">
-        <h2 id="titre-realisations" class="titre-section">Réalisations <span class="compteur">6 projets</span></h2>
+        <h2 id="titre-realisations" class="titre-section"><span class="texte">Réalisations</span> <span class="compteur">6 projets</span></h2>
 
         <!-- Cartes écrites à la main pour l'instant : elles seront générées depuis data.json en semaine 11.
              En attendant, chaque lien ouvre la fiche dans la maquette cliquable. -->
@@ -107,7 +116,7 @@
 
       <aside id="qui-suis-je" class="encart" aria-labelledby="titre-encart">
         <h2 id="titre-encart">Qui suis-je ?</h2>
-        <p>Je m'appelle Dany, graphiste en formation. Je crée des logos, des identités visuelles et des kits déco de motocross pour les petites entreprises et les clubs de Suisse romande.</p>
+        <p>Je m'appelle Dany, graphiste spécialisé dans le design sportif. Je crée des logos, des identités visuelles et des kits déco de motocross pour les clubs, les pilotes et les petites entreprises de Suisse romande.</p>
         <ul class="encart-liste">
           <li>Prix indiqué sur chaque projet</li>
           <li>Réponse sous 48 h</li>
@@ -116,10 +125,12 @@
         <a class="btn-primaire" href="design/maquette/index.html#devis">Demander un devis</a>
       </aside>
     </div>
+    </div>
   </main>
 
   <footer class="footer-site">
-    <p>© 2026 — Dany Henzer · DHgraphics</p>
+    <p><strong>DHgraphics</strong> · Sport Design</p>
+    <p>© 2026 — Dany Henzer</p>
     <p>Projet ICT 291 · HTML et CSS natifs · Accessibilité WCAG AA</p>
   </footer>
 
