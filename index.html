@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DHgraphics — Identités visuelles pour petites entreprises romandes</title>
+  <meta name="description" content="Logos, identités visuelles et kits déco moto pour les petites entreprises et les clubs de Suisse romande.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="header-site">
+    <a class="logo" href="index.html" aria-label="DHgraphics, accueil">DH<span>graphics</span></a>
+    <nav class="nav-site" aria-label="Navigation principale">
+      <a class="lien-nav actif" href="#realisations" aria-current="page">Réalisations</a>
+      <a class="btn-contour" href="#qui-suis-je">Qui suis-je ?</a>
+    </nav>
+  </header>
+
+  <main id="contenu" class="contenu-principal">
+    <section class="hero" aria-labelledby="titre-hero">
+      <h1 id="titre-hero">Votre image, dessinée pour votre entreprise.</h1>
+      <p class="hero-intro">Logos, identités visuelles et kits déco moto pour les petites entreprises et les clubs de Suisse romande.</p>
+    </section>
+
+    <!-- Recherche et filtres : affichés dès maintenant (wireframe), rendus actifs en semaine 12 -->
+    <div class="outils" role="search">
+      <label for="recherche" class="sr-only">Rechercher un projet</label>
+      <input type="search" id="recherche" class="champ-recherche" placeholder="Rechercher un projet, une commune…">
+      <div class="puces" role="group" aria-label="Filtrer par catégorie">
+        <button type="button" class="puce" aria-pressed="true">Tous</button>
+        <button type="button" class="puce" aria-pressed="false">Identité visuelle</button>
+        <button type="button" class="puce" aria-pressed="false">Logos</button>
+        <button type="button" class="puce" aria-pressed="false">Kits déco moto</button>
+      </div>
+    </div>
+
+    <div class="mise-en-page">
+      <section id="realisations" class="realisations" aria-labelledby="titre-realisations">
+        <h2 id="titre-realisations" class="titre-section">Réalisations <span class="compteur">6 projets</span></h2>
+
+        <!-- Cartes écrites à la main pour l'instant : elles seront générées depuis data.json en semaine 11.
+             En attendant, chaque lien ouvre la fiche dans la maquette cliquable. -->
+        <div class="cartes-grille">
+          <article class="carte">
+            <div class="carte-visuel visuel-1" role="img" aria-label="Aperçu : identité du Café du Port"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Identité visuelle</p>
+              <h3 class="carte-titre"><a href="design/maquette/index.html#projet/cafe-du-port">Identité complète du Café du Port</a></h3>
+              <p class="commune">Restauration · Nyon</p>
+              <p class="carte-prix">dès 900 CHF</p>
+            </div>
+          </article>
+
+          <article class="carte">
+            <div class="carte-visuel visuel-2" role="img" aria-label="Aperçu : logo de l'Atelier Vélo Libre"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Logo</p>
+              <h3 class="carte-titre"><a href="design/maquette/index.html#projet/atelier-velo">Logo de l'Atelier Vélo Libre</a></h3>
+              <p class="commune">Commerce · Lausanne</p>
+              <p class="carte-prix">dès 350 CHF</p>
+            </div>
+          </article>
+
+          <article class="carte">
+            <div class="carte-visuel visuel-3" role="img" aria-label="Aperçu : kit déco du MX Team Broye"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Kit déco moto</p>
+              <h3 class="carte-titre"><a href="design/maquette/index.html#projet/mx-team-broye">Kit déco du MX Team Broye</a></h3>
+              <p class="commune">Sport · Payerne</p>
+              <p class="carte-prix">dès 450 CHF</p>
+            </div>
+          </article>
+
+          <article class="carte">
+            <div class="carte-visuel visuel-4" role="img" aria-label="Aperçu : identité du Smash Burger Bar"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Identité visuelle</p>
+              <h3 class="carte-titre"><a href="design/maquette/index.html#projet/smash-burger">Identité du Smash Burger Bar</a></h3>
+              <p class="commune">Restauration · Vevey</p>
+              <p class="carte-prix">dès 1 100 CHF</p>
+            </div>
+          </article>
+
+          <article class="carte">
+            <div class="carte-visuel visuel-5" role="img" aria-label="Aperçu : identité de la Boulangerie Chappuis"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Identité visuelle</p>
+              <h3 class="carte-titre"><a href="design/maquette/index.html#projet/boulangerie-chappuis">Nouvelle image de la Boulangerie Chappuis</a></h3>
+              <p class="commune">Commerce · Yverdon-les-Bains</p>
+              <p class="carte-prix">dès 850 CHF</p>
+            </div>
+          </article>
+
+          <article class="carte">
+            <div class="carte-visuel visuel-6" role="img" aria-label="Aperçu : kit déco Enduro 250"></div>
+            <div class="carte-corps">
+              <p class="carte-tag">Kit déco moto</p>
+              <h3 class="carte-titre"><a href="design/maquette/index.html#projet/kit-enduro">Kit Enduro 250 personnalisé</a></h3>
+              <p class="commune">Sport · Bulle</p>
+              <p class="carte-prix">dès 280 CHF</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside id="qui-suis-je" class="encart" aria-labelledby="titre-encart">
+        <h2 id="titre-encart">Qui suis-je ?</h2>
+        <p>Je m'appelle Dany, graphiste en formation. Je crée des logos, des identités visuelles et des kits déco de motocross pour les petites entreprises et les clubs de Suisse romande.</p>
+        <ul class="encart-liste">
+          <li>Prix indiqué sur chaque projet</li>
+          <li>Réponse sous 48 h</li>
+          <li>Aucun compte à créer</li>
+        </ul>
+        <a class="btn-primaire" href="design/maquette/index.html#devis">Demander un devis</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer-site">
+    <p>© 2026 — Dany Henzer · DHgraphics</p>
+    <p>Projet ICT 291 · HTML et CSS natifs · Accessibilité WCAG AA</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

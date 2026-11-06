@@ -21,7 +21,7 @@
 
 ## 💡 À propos
 
-**DHgraphics** permet à mes futurs clients de voir **ce que je peux leur apporter** et **ce que je suis capable de faire** pour eux : logos, identités visuelles, affiches…
+**DHgraphics** permet à mes futurs clients de voir **ce que je peux leur apporter** et **ce que je suis capable de faire** pour eux : logos, identités visuelles et kits déco de motocross.
 
 C'est une **vitrine** : pas de compte client, pas de paiement — juste mes projets mis en valeur.
 
@@ -66,6 +66,7 @@ Puis ouvrir `index.html` dans un navigateur (ou utiliser l'extension *Live Serve
 - [x] 3 propositions de design IA et choix final → [`design/propositions/`](./design/propositions/) · [`design/critique.md`](./design/critique.md)
 - [x] Maquette cliquable du design final → [`design/maquette/`](./design/maquette/)
 - [ ] Audit d'accessibilité et test utilisateur → [`design/tests-utilisateurs.md`](./design/tests-utilisateurs.md)
+- [x] Écran d'accueil responsive en HTML5 sémantique et variables CSS → [`index.html`](./index.html) · [`style.css`](./style.css) · exercice container queries → [`exercices/s09/`](./exercices/s09/)
 - [x] Base de données des réalisations → [`data.json`](./data.json) (32 fiches) · documentation et schéma → [`data/`](./data/)
 - [ ] Développement de la vitrine
 - [ ] Mise en ligne
