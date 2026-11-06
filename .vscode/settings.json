@@ -1,0 +1,6 @@
+{
+  "json.schemas": [
+    { "fileMatch": ["/data.json"], "url": "./data/schema.json" },
+    { "fileMatch": ["/data/data-avance.json"], "url": "./data/schema-avance.json" }
+  ]
+}
