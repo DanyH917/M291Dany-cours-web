@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DHgraphics — Maquette cliquable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Teko:wght@700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
 
   <header class="top">
-    <a class="logo" href="#accueil" aria-label="DHgraphics, retour à l'accueil">DH<span>graphics</span></a>
+    <a class="logo" href="#accueil" aria-label="DHgraphics, retour à l'accueil"><span class="logo-dh" aria-hidden="true">DH</span><span class="logo-graphics" aria-hidden="true">Graphics</span></a>
     <a class="btn-outline" href="#qui">Qui suis-je ?</a>
   </header>
 
@@ -18,8 +21,8 @@
     <!-- Écran 1 + 2 : Accueil, recherche et filtres -->
     <section id="ecran-accueil" class="ecran" aria-labelledby="titre-accueil">
       <div class="hero">
-        <h1 id="titre-accueil">Votre image, dessinée pour votre entreprise.</h1>
-        <p>Logos, identités visuelles et kits déco pour les petites entreprises romandes.</p>
+        <h1 id="titre-accueil">Votre image, <em>dessinée pour gagner.</em></h1>
+        <p>Logos, identités visuelles et kits déco moto pour les clubs, les pilotes et les petites entreprises romandes.</p>
       </div>
 
       <label class="sr-only" for="recherche">Rechercher un projet</label>
@@ -83,7 +86,7 @@
     <section id="ecran-qui" class="ecran" hidden aria-labelledby="titre-qui">
       <a class="retour" href="#accueil">← Retour aux projets</a>
       <h1 id="titre-qui">Qui suis-je ?</h1>
-      <p class="texte">Je m'appelle Dany, graphiste en formation. Je crée des logos, des identités visuelles et des kits déco de motocross pour des petites entreprises et des clubs de Suisse romande.</p>
+      <p class="texte">Je m'appelle Dany, graphiste spécialisé dans le design sportif. Je crée des logos, des identités visuelles et des kits déco de motocross pour des petites entreprises et des clubs de Suisse romande.</p>
     </section>
   </main>
 

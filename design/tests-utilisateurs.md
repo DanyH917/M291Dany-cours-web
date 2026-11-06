@@ -10,29 +10,33 @@
 
 ### A1. Contrastes des textes (WCAG 1.4.3 : ≥ 4,5:1, ≥ 3:1 pour les titres ≥ 24 px)
 
-Mesures faites sur la palette du design final (formule de luminance relative WCAG, la même que celle des vérificateurs en ligne).
+Mesures faites sur la palette de mon **brandboard** (rouge `#e30b17`, noir `#1c1c1c`, blanc `#ffffff`), avec la formule de luminance relative WCAG — la même que celle des vérificateurs en ligne. Mesures relevées sur la maquette et sur `index.html`.
 
 | Élément | Couleur texte | Fond | Ratio mesuré | Seuil | Résultat |
 |---------|---------------|------|:---:|:---:|:---:|
-| **Bouton principal « Demander un devis » / « Envoyer »** | `#FFFFFF` | `#C2410C` | **5,18:1** | 4,5:1 | ✅ |
-| Puce de filtre active (« Tous ») | `#FFFFFF` | `#C2410C` | 5,18:1 | 4,5:1 | ✅ |
-| Texte principal | `#1F1F1F` | `#FAF7F2` | 15,42:1 | 4,5:1 | ✅ |
-| Texte principal sur carte | `#1F1F1F` | `#FFFFFF` | 16,48:1 | 4,5:1 | ✅ |
-| Texte secondaire (sous-titre, lieu) | `#5A5A5A` | `#FAF7F2` | 6,45:1 | 4,5:1 | ✅ |
-| Texte secondaire sur carte | `#5A5A5A` | `#FFFFFF` | 6,90:1 | 4,5:1 | ✅ |
-| Étiquette de catégorie (13 px, orange) | `#C2410C` | `#FFFFFF` | 5,18:1 | 4,5:1 | ✅ |
-| « graphics » du logo (22 px gras) | `#C2410C` | `#FAF7F2` | 4,85:1 | 3:1 | ✅ |
-| Message d'erreur | `#B42318` | `#FAF7F2` | 6,15:1 | 4,5:1 | ✅ |
+| **Bouton principal « Demander un devis » / « Envoyer »** (Teko 26 px) | `#ffffff` | `#e30b17` | **4,85:1** | 3:1 (grand texte) · 4,5:1 | ✅ |
+| Puce de filtre active (« Tous ») | `#ffffff` | `#e30b17` | 4,85:1 | 4,5:1 | ✅ |
+| Texte principal sur carte | `#1c1c1c` | `#ffffff` | 17,04:1 | 4,5:1 | ✅ |
+| Texte principal sur le fond | `#1c1c1c` | `#f2f2f2` | 15,22:1 | 4,5:1 | ✅ |
+| Texte secondaire (commune, détails) | `#595959` | `#ffffff` | 7,00:1 | 4,5:1 | ✅ |
+| Texte secondaire sur le fond | `#595959` | `#f2f2f2` | 6,26:1 | 4,5:1 | ✅ |
+| Étiquette de catégorie (rouge) | `#e30b17` | `#ffffff` | 4,85:1 | 4,5:1 | ✅ |
+| Texte d'intro sur le bandeau noir | `#c4c4c4` | `#1c1c1c` | 9,77:1 | 4,5:1 | ✅ |
+| Titres blancs sur le bandeau noir | `#ffffff` | `#1c1c1c` | 17,04:1 | 3:1 | ✅ |
+| Titre rouge sur le bandeau noir (40 px et plus) | `#e30b17` | `#1c1c1c` | 3,51:1 | 3:1 (grand texte) | ✅ |
+| Message d'erreur | `#b5000f` | `#f2f2f2` | 6,31:1 | 4,5:1 | ✅ |
 
-> Rappel : l'orange d'origine de la proposition A (`#E8590C`) ne donnait que **3,58:1** avec du texte blanc. Il a été assombri en `#C2410C` lors du choix final (voir [`critique.md`](./critique.md)).
+> ⚠️ Le rouge du brandboard sur fond noir (**3,51:1**) échoue pour du petit texte. Règle appliquée : rouge sur noir **uniquement pour les titres ≥ 24 px** ; les petits textes sur noir sont en blanc ou en gris `#c4c4c4`.
+>
+> Les initiales « DH » du logo (noir avec double contour blanc et rouge) ne sont pas soumises au critère : WCAG exempte les logotypes. Le lien du logo a quand même un nom accessible (`aria-label="DHgraphics, accueil"`).
 
 ### A2. Contrastes des contours de champs et de boutons (WCAG 1.4.11 : ≥ 3:1)
 
-| Élément | Avant | Après correction |
+| Élément | Première version (proposition A) | Version brandboard |
 |---------|-------|------------------|
-| Bordure du champ de recherche | `#E4DED4` → **1,25:1** ❌ | `#857D73` → **3,79:1** ✅ |
-| Bordure des puces de filtres inactives | `#E4DED4` → **1,25:1** ❌ | `#857D73` → **3,79:1** ✅ |
-| Bordure des champs du formulaire de devis | `#E4DED4` → **1,25:1** ❌ | `#857D73` → **3,79:1** ✅ |
+| Bordure du champ de recherche | `#E4DED4` → **1,25:1** ❌ | `#1c1c1c` → **15,22:1** ✅ |
+| Bordure des puces de filtres inactives | `#E4DED4` → **1,25:1** ❌ | `#1c1c1c` → **15,22:1** ✅ |
+| Bordure des champs du formulaire de devis | `#E4DED4` → **1,25:1** ❌ | `#1c1c1c` → **15,22:1** ✅ (rouge `#b5000f` en cas d'erreur : 6,31:1) |
 
 ### A3. Navigation complète au clavier (Tab, Maj + Tab, Entrée, Espace)
 
@@ -46,9 +50,13 @@ Mesures faites sur la palette du design final (formule de luminance relative WCA
 | Envoyer le formulaire vide | ✅ 3 messages d'erreur clairs, focus placé sur le premier champ en erreur |
 | Envoyer le formulaire rempli | ✅ message « Merci … ! Demande envoyée », focus placé sur la confirmation |
 | Aucun piège de focus | ✅ |
-| **Indicateur de focus visible** (WCAG 2.4.7) | ❌ avant : seulement le contour fin par défaut du navigateur (1 px), presque invisible sur la puce orange → ✅ après : contour **3 px noir anthracite** décalé de 3 px (15,42:1 sur le fond) |
+| **Indicateur de focus visible** (WCAG 2.4.7) | ❌ avant : seulement le contour fin par défaut du navigateur (1 px), presque invisible sur la puce colorée → ✅ après : contour **3 px noir** + halo blanc de 3 px, visible sur fond clair comme sur fond noir |
 
-![Focus clavier avant / après](./audit/focus-avant-apres.png)
+![Focus clavier avant / après (première version)](./audit/focus-avant-apres.png)
+
+Version actuelle aux couleurs du brandboard (focus sur la puce « Tous ») :
+
+![Focus clavier — version brandboard](./audit/focus-brandboard.png)
 
 ### A4. Cibles tactiles (WCAG 2.5.8 : ≥ 24 × 24 px · standard du cours : 48 × 48 px)
 
@@ -125,10 +133,11 @@ J'ai aidé : _oui / non_
 
 | # | Problème mesuré | Correction chiffrée | Statut |
 |---|-----------------|---------------------|:---:|
-| 1 | Focus clavier presque invisible (1 px, couleur par défaut) | Contour `3px solid #1F1F1F` + décalage 3 px sur tous les éléments interactifs → 15,42:1 | ✅ fait |
-| 2 | Bordures des champs et puces à **1,25:1** | Nouvelle couleur `#857D73` → **3,79:1** | ✅ fait |
+| 1 | Focus clavier presque invisible (1 px, couleur par défaut) | Contour `3px solid #1c1c1c` + décalage 3 px + halo blanc sur tous les éléments interactifs → 17,04:1 | ✅ fait |
+| 2 | Bordures des champs et puces à **1,25:1** | Bordure `#857D73` (3,79:1), puis noir du brandboard `#1c1c1c` → **15,22:1** | ✅ fait |
 | 3 | Puces de filtres à 44 px de haut | Hauteur minimale **48 px** | ✅ fait |
 | 4 | Messages cachés qui restaient visibles | Règle CSS `[hidden] { display: none !important; }` | ✅ fait |
+| 5 | Rouge du brandboard sur noir à 3,51:1 | Rouge sur noir réservé aux titres ≥ 24 px, petits textes en blanc / `#c4c4c4` | ✅ fait |
 
 ### Correctifs issus du test utilisateur (2 prioritaires)
 

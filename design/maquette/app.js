@@ -2,22 +2,22 @@
 const projets = [
   { id: 'cafe-du-port', titre: 'Café du Port', type: 'Identité visuelle', secteur: 'Restauration', lieu: 'Nyon', duree: '3 semaines', prix: 'dès 900 CHF',
     besoin: 'Nouveau logo, menu et enseigne pour la réouverture.', forts: 'Lisible de loin, déclinable sur tous les supports.', faibles: 'Peu de couleurs pour Instagram.',
-    visuel: 'linear-gradient(135deg,#C2410C 0 40%,#1F1F1F 40% 60%,#F4E9DC 60%)' },
+    visuel: 'linear-gradient(115deg,#1c1c1c 0 55%,#e30b17 55% 62%,#ffffff 62% 66%,#1c1c1c 66%)' },
   { id: 'atelier-velo', titre: 'Atelier Vélo Libre', type: 'Logo', secteur: 'Commerce', lieu: 'Lausanne', duree: '1 semaine', prix: 'dès 350 CHF',
     besoin: 'Un logo simple pour les vitrines et les autocollants.', forts: 'Reconnaissable en petit format.', faibles: 'Version noir et blanc moins forte.',
-    visuel: 'radial-gradient(circle at 30% 40%,#1F1F1F 0 22%,#F4E9DC 23%)' },
+    visuel: 'radial-gradient(circle at 35% 50%,#e30b17 0 20%,#ffffff 21% 24%,#1c1c1c 25%)' },
   { id: 'mx-team-broye', titre: 'MX Team Broye', type: 'Kit déco moto', secteur: 'Sport', lieu: 'Payerne', duree: '2 semaines', prix: 'dès 450 CHF',
     besoin: 'Kit déco pour 6 motos du club avec numéros et sponsors.', forts: 'Très visible en course.', faibles: 'Beaucoup de logos sponsors à placer.',
-    visuel: 'linear-gradient(90deg,#C2410C 0 33%,#FAF7F2 33% 66%,#2B2B2B 66%)' },
+    visuel: 'repeating-linear-gradient(115deg,#1c1c1c 0 26px,#e30b17 26px 52px,#ffffff 52px 60px)' },
   { id: 'smash-burger', titre: 'Smash Burger Bar', type: 'Identité visuelle', secteur: 'Restauration', lieu: 'Vevey', duree: '4 semaines', prix: 'dès 1 100 CHF',
     besoin: 'Identité complète pour un food truck : logo, carte, camion.', forts: 'Ambiance forte et cohérente.', faibles: 'Police de titre peu lisible en très petit.',
-    visuel: 'linear-gradient(160deg,#1F1F1F 0 50%,#C2410C 50%)' },
+    visuel: 'linear-gradient(160deg,#e30b17 0 48%,#1c1c1c 48%)' },
   { id: 'boulangerie-chappuis', titre: 'Boulangerie Chappuis', type: 'Identité visuelle', secteur: 'Commerce', lieu: 'Yverdon', duree: '3 semaines', prix: 'dès 850 CHF',
     besoin: 'Moderniser l\'image d\'une boulangerie familiale.', forts: 'Garde l\'esprit artisanal.', faibles: 'Palette proche d\'autres boulangeries.',
-    visuel: 'radial-gradient(circle at 70% 60%,#C2410C 0 18%,#F4E9DC 19%)' },
+    visuel: 'conic-gradient(from 200deg at 70% 55%,#e30b17 0 25%,#1c1c1c 25% 75%,#ffffff 75%)' },
   { id: 'kit-enduro', titre: 'Kit Enduro 250', type: 'Kit déco moto', secteur: 'Sport', lieu: 'Bulle', duree: '1 semaine', prix: 'dès 280 CHF',
     besoin: 'Kit personnalisé pour un pilote amateur.', forts: 'Prêt à imprimer, gabarit exact.', faibles: 'Un seul modèle de moto.',
-    visuel: 'linear-gradient(45deg,#2B2B2B 25%,#F4E9DC 25% 50%,#2B2B2B 50% 75%,#F4E9DC 75%)' },
+    visuel: 'repeating-conic-gradient(#1c1c1c 0 25%,#ffffff 0 50%) 0 0 / 32px 32px' },
 ];
 
 const $ = (s) => document.querySelector(s);
